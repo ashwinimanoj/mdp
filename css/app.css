@@ -3642,22 +3642,34 @@ button, .button {
   color: #222222;
   background: white url(../img/white-bg.png);
   border-radius: 0; }
-  #intro h1, #intro h2, #intro h3, #intro #archive .grid a .day, #archive .grid a #intro .day, #intro h4, #intro h5, #intro h6, #intro #archive .grid a .month, #archive .grid a #intro .month, #intro .subheader, #intro p, #intro blockquote, #intro a, #intro small, #intro #archive .grid a .year, #archive .grid a #intro .year {
+  #intro h1, #intro h2, #intro h3, #intro #archive .grid a .day, #archive .grid a #intro .day, #intro h4, #intro h5, #intro h6, #intro #archive .grid a .month, #archive .grid a #intro .month, #intro .subheader, #intro p, #intro blockquote, #intro small, #intro #archive .grid a .year, #archive .grid a #intro .year {
     color: #222222; }
+  #intro a {
+    color: #00aeef; }
+    #intro a:hover, #intro a:active {
+      color: #4cc6f3; }
   #intro code, #intro abbr, #intro acronym {
     color: black; }
   @media only screen and (min-width: 768px) {
     #intro {
       margin-top: 45px; } }
-  #intro .logo img {
-    display: inline-block;
-    margin: 0 auto;
-    height: 2em;
-    -webkit-animation: bounceInLeft 1s 0s ease both;
-    -moz-animation: bounceInLeft 1s 0s ease both;
-    -ms-animation: bounceInLeft 1s 0s ease both;
-    -o-animation: bounceInLeft 1s 0s ease both;
-    animation: bounceInLeft 1s 0s ease both; }
+  #intro .logo .tw-logo {
+    display: block; }
+    #intro .logo .tw-logo:hover {
+      -webkit-animation: bounce 1s 0s ease both;
+      -moz-animation: bounce 1s 0s ease both;
+      -ms-animation: bounce 1s 0s ease both;
+      -o-animation: bounce 1s 0s ease both;
+      animation: bounce 1s 0s ease both; }
+    #intro .logo .tw-logo img {
+      display: inline-block;
+      margin: 0 auto;
+      height: 2em;
+      -webkit-animation: bounceInLeft 1s 0s ease both;
+      -moz-animation: bounceInLeft 1s 0s ease both;
+      -ms-animation: bounceInLeft 1s 0s ease both;
+      -o-animation: bounceInLeft 1s 0s ease both;
+      animation: bounceInLeft 1s 0s ease both; }
   #intro .logo h1 {
     -webkit-animation: bounceInRight 1s 0s ease both;
     -moz-animation: bounceInRight 1s 0s ease both;
@@ -3670,13 +3682,23 @@ button, .button {
     -ms-animation: flipInX 1s 0.5s ease both;
     -o-animation: flipInX 1s 0.5s ease both;
     animation: flipInX 1s 0.5s ease both; }
-  #intro .logo h3.subheader, #intro .logo #archive .grid a .subheader.day, #archive .grid a #intro .logo .subheader.day {
+  #intro .logo .subheader {
     color: #00aeef;
-    margin: 1em 0 0 0; }
+    margin: 1em 0 0 0;
+    -webkit-animation: flipInX 1s 0.5s ease both;
+    -moz-animation: flipInX 1s 0.5s ease both;
+    -ms-animation: flipInX 1s 0.5s ease both;
+    -o-animation: flipInX 1s 0.5s ease both;
+    animation: flipInX 1s 0.5s ease both; }
   #intro .logo .subnote {
     line-height: 1.5;
     display: block;
-    font-size: 0.85em; }
+    font-size: 0.6em;
+    -webkit-animation: flipInX 1s 0.5s ease both;
+    -moz-animation: flipInX 1s 0.5s ease both;
+    -ms-animation: flipInX 1s 0.5s ease both;
+    -o-animation: flipInX 1s 0.5s ease both;
+    animation: flipInX 1s 0.5s ease both; }
   #intro .countdown h4 {
     color: #00aeef; }
   #intro .countdown .date p {
@@ -3794,8 +3816,12 @@ button, .button {
 #agenda {
   color: #222222;
   background: #00aeef url(../img/white-bg.png); }
-  #agenda h1, #agenda h2, #agenda h3, #agenda #archive .grid a .day, #archive .grid a #agenda .day, #agenda h4, #agenda h5, #agenda h6, #agenda #archive .grid a .month, #archive .grid a #agenda .month, #agenda .subheader, #agenda p, #agenda blockquote, #agenda a, #agenda small, #agenda #archive .grid a .year, #archive .grid a #agenda .year {
+  #agenda h1, #agenda h2, #agenda h3, #agenda #archive .grid a .day, #archive .grid a #agenda .day, #agenda h4, #agenda h5, #agenda h6, #agenda #archive .grid a .month, #archive .grid a #agenda .month, #agenda .subheader, #agenda p, #agenda blockquote, #agenda small, #agenda #archive .grid a .year, #archive .grid a #agenda .year {
     color: #222222; }
+  #agenda a {
+    color: white; }
+    #agenda a:hover, #agenda a:active {
+      color: #b2e6fa; }
   #agenda code, #agenda abbr, #agenda acronym {
     color: black; }
   #agenda .timings .row {
@@ -3817,8 +3843,6 @@ button, .button {
       transform-origin: 50% 50%; }
     #agenda .timings .row .summary {
       position: relative; }
-      #agenda .timings .row .summary a {
-        color: white; }
       #agenda .timings .row .summary p {
         margin-bottom: 0; }
       #agenda .timings .row .summary small, #agenda .timings .row .summary #archive .grid a .year, #archive .grid a #agenda .timings .row .summary .year {
@@ -3829,6 +3853,8 @@ button, .button {
         margin: 0.5em auto;
         max-width: 3em;
         border-radius: 50%; }
+      #agenda .timings .row .summary a {
+        white-space: nowrap; }
     @media only screen and (min-width: 768px) {
       #agenda .timings .row p {
         margin-bottom: 0; }
@@ -3866,8 +3892,12 @@ button, .button {
   color: white;
   background: #222222 url(../img/white-bg.png);
   background-image: url(../img/dark-bg.jpg); }
-  #location h1, #location h2, #location h3, #location #archive .grid a .day, #archive .grid a #location .day, #location h4, #location h5, #location h6, #location #archive .grid a .month, #archive .grid a #location .month, #location .subheader, #location p, #location blockquote, #location a, #location small, #location #archive .grid a .year, #archive .grid a #location .year {
+  #location h1, #location h2, #location h3, #location #archive .grid a .day, #archive .grid a #location .day, #location h4, #location h5, #location h6, #location #archive .grid a .month, #archive .grid a #location .month, #location .subheader, #location p, #location blockquote, #location small, #location #archive .grid a .year, #archive .grid a #location .year {
     color: white; }
+  #location a {
+    color: white; }
+    #location a:hover, #location a:active {
+      color: #bcbcbc; }
   #location code, #location abbr, #location acronym {
     color: #d9d9d9; }
   #location .row {
@@ -3887,8 +3917,12 @@ button, .button {
   color: white;
   background: #222222 url(../img/white-bg.png);
   background-image: url(../img/dark-bg.jpg); }
-  #about h1, #about h2, #about h3, #about #archive .grid a .day, #archive .grid a #about .day, #about h4, #about h5, #about h6, #about #archive .grid a .month, #archive .grid a #about .month, #about .subheader, #about p, #about blockquote, #about a, #about small, #about #archive .grid a .year, #archive .grid a #about .year {
+  #about h1, #about h2, #about h3, #about #archive .grid a .day, #archive .grid a #about .day, #about h4, #about h5, #about h6, #about #archive .grid a .month, #archive .grid a #about .month, #about .subheader, #about p, #about blockquote, #about small, #about #archive .grid a .year, #archive .grid a #about .year {
     color: white; }
+  #about a {
+    color: #00aeef; }
+    #about a:hover, #about a:active {
+      color: #0a84b1; }
   #about code, #about abbr, #about acronym {
     color: #d9d9d9; }
   #about .social a {
@@ -3938,8 +3972,6 @@ button, .button {
       margin-bottom: 1em; }
     #about blockquote small, #about blockquote #archive .grid a .year, #archive .grid a #about blockquote .year {
       font-size: 0.8125em; }
-    #about blockquote a {
-      color: #00aeef; }
     #about blockquote cite {
       margin: 0.25em 0;
       text-align: right; }
@@ -3947,10 +3979,27 @@ button, .button {
 #archive {
   color: #222222;
   background: white url(../img/white-bg.png); }
-  #archive h1, #archive h2, #archive h3, #archive .grid a .day, #archive h4, #archive h5, #archive h6, #archive .grid a .month, #archive .subheader, #archive p, #archive blockquote, #archive a, #archive small, #archive .grid a .year {
+  #archive h1, #archive h2, #archive h3, #archive .grid a .day, #archive h4, #archive h5, #archive h6, #archive .grid a .month, #archive .subheader, #archive p, #archive blockquote, #archive small, #archive .grid a .year {
     color: #222222; }
+  #archive a {
+    color: #00aeef; }
+    #archive a:hover, #archive a:active {
+      color: #4cc6f3; }
   #archive code, #archive abbr, #archive acronym {
     color: black; }
+  #archive .grid {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    *zoom: 1; }
+    #archive .grid:before, #archive .grid:after {
+      content: " ";
+      display: table; }
+    #archive .grid:after {
+      clear: both; }
+    #archive .grid li {
+      display: inline-block;
+      width: 5em; }
   #archive .grid a {
     display: block;
     overflow: hidden;
@@ -3962,7 +4011,7 @@ button, .button {
     -ms-transition: background-color 0.3s;
     -o-transition: background-color 0.3s;
     transition: background-color 0.3s; }
-    #archive .grid a:hover {
+    #archive .grid a:hover, #archive .grid a.active {
       background-color: #00aeef; }
     #archive .grid a .month {
       color: white;
@@ -3978,7 +4027,7 @@ button, .button {
     #archive .grid a .day {
       background-color: white;
       margin: 0;
-      line-height: 1.5em; }
+      line-height: 1.25em; }
     #archive .grid a .year {
       background-color: white;
       border-top: 1px dashed #b3b3b3;
@@ -3991,8 +4040,12 @@ button, .button {
   border-radius: 0;
   margin-top: 0;
   padding: 0.5em 0; }
-  #footer h1, #footer h2, #footer h3, #footer #archive .grid a .day, #archive .grid a #footer .day, #footer h4, #footer h5, #footer h6, #footer #archive .grid a .month, #archive .grid a #footer .month, #footer .subheader, #footer p, #footer blockquote, #footer a, #footer small, #footer #archive .grid a .year, #archive .grid a #footer .year {
+  #footer h1, #footer h2, #footer h3, #footer #archive .grid a .day, #archive .grid a #footer .day, #footer h4, #footer h5, #footer h6, #footer #archive .grid a .month, #archive .grid a #footer .month, #footer .subheader, #footer p, #footer blockquote, #footer small, #footer #archive .grid a .year, #archive .grid a #footer .year {
     color: #a6a6a6; }
+  #footer a {
+    color: #3dcaff; }
+    #footer a:hover, #footer a:active {
+      color: #73d6fb; }
   #footer code, #footer abbr, #footer acronym {
     color: gray; }
   #footer .row {
