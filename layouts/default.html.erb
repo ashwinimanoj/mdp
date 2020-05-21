@@ -22,7 +22,7 @@
         <div class="row countdown">
             <div class="small-8 small-offset-2 large-4 large-offset-0 columns date">
                 <p><%= @item[:edition] %><sup><%= @item[:edition].ordinal %></sup> edition</p>
-                <h4><%= start_date.strftime("%b %-d").downcase %></h4>
+                <h4><%= start_date.strftime("%b %-d") %></h4>
             </div>
             <div class="small-6 large-2 columns counter">
                 <h4><span id="days">&nbsp;</span></h4>
@@ -105,10 +105,6 @@
     <%= render '_about_section' %>
 
     <%= render '_agenda_section' %>
-
-    <%= render '_location_section' %>
-
-    <%= render '_archive_section' %>
 
     <%= render '_header_section' %>
 
